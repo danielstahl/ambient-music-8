@@ -23,21 +23,24 @@ function ImportAudio(index, channel, trackName, fileName, lastInFolder)
   reaper.SetMediaItemTakeInfo_Value(take, "I_CHANMODE", channel + 64 + 2)
 end
 
-audioFile = "/Users/danielstahl/Documents/Music/Pieces/Module Music/Module Music 7/stage/moduleMusic7Score.caf"
+audioFile = "/Users/danielstahl/Documents/Music/Pieces/Ambient Music/Ambient Music 8/stage/ambientMusic8Score.caf"
 
-CreateFolder(0, "Low")
-ImportAudio(1, 1, "Low reverb", audioFile, false)
-ImportAudio(2, 3, "Low clean", audioFile, true)
+CreateFolder(0, "Sound")
+ImportAudio(1, 1, "Sound Effect", audioFile, false)
+ImportAudio(2, 3, "Sound Clean", audioFile, true)
 
-CreateFolder(3, "Low Bridge")
-ImportAudio(4, 5, "Low Bridge reverb", audioFile, false)
-ImportAudio(5, 7, "Low Bridge clean", audioFile, true)
+CreateFolder(3, "Sub")
+ImportAudio(4, 5, "Sub noise", audioFile, false)
+ImportAudio(5, 7, "Sub reverb", audioFile, true)
 
-CreateFolder(6, "Middle")
-ImportAudio(7, 9, "Middle reverb", audioFile, false)
-ImportAudio(8, 11, "Middle clean", audioFile, true)
+CreateFolder(6, "Low")
+ImportAudio(7, 9, "Low noise", audioFile, false)
+ImportAudio(8, 11, "Low reverb", audioFile, true)
 
-CreateFolder(9, "High")
-ImportAudio(10, 13, "High reverb", audioFile, false)
-ImportAudio(11, 15, "High clean", audioFile, true)
+CreateFolder(9, "Middle")
+ImportAudio(10, 13, "Middle noise", audioFile, false)
+ImportAudio(11, 15, "Middle reverb", audioFile, true)
 
+CreateFolder(12, "High")
+ImportAudio(13, 17, "High noise", audioFile, false)
+ImportAudio(14, 19, "High reverb", audioFile, true)
